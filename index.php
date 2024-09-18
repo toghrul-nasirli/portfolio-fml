@@ -280,7 +280,7 @@
                                     </div>
                                     <!-- single item -->
                                     <div class="item image image-2">
-                                        <img src="assets/img/works/other/anne.webp" alt="Image">
+                                        <img src="assets/img/works/other/illi-1000x1300.webp" alt="Image">
                                     </div>
                                     <!-- single item -->
                                     <div class="item icon">
@@ -301,7 +301,7 @@
                                     </div>
                                     <!-- single item -->
                                     <div class="item image image-3">
-                                        <img src="assets/img/works/other/anne.webp" alt="Image">
+                                        <img src="assets/img/works/other/1000x1300-italian-soda.webp" alt="Image">
                                     </div>
                                 </div>
                             </div>
@@ -352,11 +352,9 @@
             <div class="inner__wrapper">
                 <div class="container-fluid p-0">
                     <div class="row g-0">
-
                         <!-- Inner Section Content Start -->
                         <div class="col-12">
                             <div class="inner__content">
-
                                 <!-- Content Block - Portfolio Stacking Cards Start -->
                                 <div class="content__block">
                                     <div class="stack-wrapper">
@@ -767,7 +765,7 @@
                                             <div class="project">
                                                 <!-- Project Block - Title with Image Start -->
                                                 <div class="project__block no-padding no-margin project-image-bg">
-                                                    <img class="project-image-bg__portrait" src="https://dummyimage.com/600x800/4d4d4d/636363"
+                                                    <img class="project-image-bg__portrait" src="assets/img/works/illustrations/cover1.webp"
                                                          alt="Project Illustration">
                                                     <img class="project-image-bg__landscape" src="assets/img/works/illustrations/cover1.webp"
                                                          alt="Project Illustration">
@@ -933,7 +931,7 @@
                                         <div class="project">
                                             <!-- Project Block - Title with Image Start -->
                                             <div class="project__block no-padding no-margin project-image-bg">
-                                                <img class="project-image-bg__portrait" src="https://dummyimage.com/600x800/4d4d4d/636363"
+                                                <img class="project-image-bg__portrait" src="assets/img/works/sensitive/wbss.webp"
                                                      alt="Project Illustration">
                                                 <img class="project-image-bg__landscape" src="assets/img/works/sensitive/wbss.webp"
                                                      alt="Project Illustration">
@@ -1145,7 +1143,7 @@
 
                                                 <!-- Project Block - Title with Image Start -->
                                                 <div class="project__block no-padding no-margin project-image-bg">
-                                                    <img class="project-image-bg__portrait" src="https://dummyimage.com/600x800/4d4d4d/636363"
+                                                    <img class="project-image-bg__portrait" src="assets/img/works/sipner/sipwb.webp"
                                                          alt="Project Illustration">
                                                     <img class="project-image-bg__landscape" src="assets/img/works/sipner/sipwb.webp"
                                                          alt="Project Illustration">
@@ -1492,9 +1490,15 @@
                                                 </p>
                                             </div>
                                             <div class="col-12 col-md-4 col-lg-5">
-                                                <p class="resume-lines__descr type-basic-160lh animate-in-up">I created original images for a range of
-                                                    digital
-                                                    and printed products.</p>
+                                                <h5>Job responsibilities</h5>
+                                                <p class="fs-2 mb-4 resume-lines__descr type-basic-160lh animate-in-up">
+                                                    Brand shootings, social media posts, creative content, illustrations, logo and branding, print files
+                                                </p>
+                                                <h5>Brands</h5>
+                                                <p class="fs-2 resume-lines__descr type-basic-160lh animate-in-up">
+                                                    McDonald’s Azerbaijan, McDonald’s GEO, NorthWest Construction Company, Haval, Vita1000,
+                                                    Avromed (Avromed, Aloe+), Procter & Gamble, Tabaterra, Kristal Absheron
+                                                </p>
                                             </div>
                                         </div>
                                         <div class="resume-divider animate-in-up"></div>
@@ -1512,8 +1516,10 @@
                                                 </p>
                                             </div>
                                             <div class="col-12 col-md-4 col-lg-5">
-                                                <p class="resume-lines__descr type-basic-160lh animate-in-up">My job was to create adverts, branding,
-                                                    signage and other media products.</p>
+                                                <h5>Job responsibilities</h5>
+                                                <p class="fs-2 mb-4 resume-lines__descr type-basic-160lh animate-in-up">
+                                                    Social media posts, creative content
+                                                </p>
                                             </div>
                                         </div>
                                         <div class="resume-divider animate-in-up"></div>
@@ -1531,10 +1537,18 @@
                                                 </p>
                                             </div>
                                             <div class="col-12 col-md-4 col-lg-5">
-                                                <p class="resume-lines__descr type-basic-160lh animate-in-up">I am actively involved in creating user
-                                                    interfaces for mobile apps and websites.</p>
+                                                <h5>Job responsibilities</h5>
+                                                <p class="fs-2 mb-4 resume-lines__descr type-basic-160lh animate-in-up">
+                                                    Social media posts, creative content, illustrations, logo and branding
+                                                </p>
+                                                <h5>Brands</h5>
+                                                <p class="fs-2 resume-lines__descr type-basic-160lh animate-in-up">
+                                                    Splat, Lassa Azerbaijan, Grand Agro, Ləzzət MMC, Olivea, Pegas, BioMio, Smart Electronics,
+                                                    Technol, Top servis
+                                                </p>
                                             </div>
                                         </div>
+                                        <div class="resume-divider animate-in-up"></div>
                                         <div class="row g-0 resume-lines__item">
                                             <div class="col-12 col-md-4 col-lg-2">
                                                 <p class="resume-lines__date type-basic-160lh animate-in-up fs-1">2022 February</p>
@@ -1548,14 +1562,19 @@
                                                 </p>
                                             </div>
                                             <div class="col-12 col-md-4 col-lg-5">
-                                                <p class="resume-lines__descr type-basic-160lh animate-in-up">I am actively involved in creating user
-                                                    interfaces for mobile apps and websites.</p>
+                                                <h5>Job responsibilities</h5>
+                                                <p class="fs-2 mb-4 resume-lines__descr type-basic-160lh animate-in-up">
+                                                    Social media posts, characters for animations,illustrations, logo and branding
+                                                </p>
+                                                <h5>Brands</h5>
+                                                <p class="fs-2 resume-lines__descr type-basic-160lh animate-in-up">
+                                                    ABB Invest, Gobustone, Otomed, Duymeta, Logix, Favorite Park
+                                                </p>
                                             </div>
                                         </div>
                                         <div class="resume-divider animate-in-up"></div>
                                     </div>
                                     <!-- Resume Lines V1 End -->
-
                                 </div>
                                 <!-- Content Block - Work Experience End -->
 
