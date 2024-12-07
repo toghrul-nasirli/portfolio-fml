@@ -115,35 +115,49 @@
     <div class="logo loading__fade">
         <a href="#home" class="logo__link">
             <!-- logo icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-        <style type="text/css">
-            .mxd-background {
-                fill: var(--neutral-bright);
-            }
+            <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 40">
+                <!-- Generator: Adobe Illustrator 29.0.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 192)  -->
+                <defs>
+                    <style>
+                        .st0 {
+                            fill: var(--neutral-bright-opposite) !important;
+                        }
 
-            .mxd-cat {
-                clip-path: url(#mxd-path-id);
-                fill: var(--t-opp-bright);
-            }
-        </style>
-                <path class="mxd-background" d="M33.4,50H16.7C7.5,50,0,42.5,0,33.3V16.7C0,7.5,7.5,0,16.7,0h16.7C42.5,0,50,7.5,50,16.7v16.7
-            C50,42.5,42.5,50,33.4,50z"/>
-                <g>
-                    <defs>
-                        <path id="mxd-clip-path" d="M33.4,50H16.7C7.5,50,0,42.5,0,33.3V16.7C0,7.5,7.5,0,16.7,0h16.7C42.5,0,50,7.5,50,16.7v16.7
-                C50,42.5,42.5,50,33.4,50z"/>
-                    </defs>
-                    <clipPath id="mxd-path-id">
-                        <use xlink:href="#mxd-clip-path" style="overflow:visible;"/>
+                        .st3 {
+                            fill: var(--neutral-bright) !important;
+                        }
+
+                        .st1 {
+                            fill: none;
+                        }
+
+                        .st2 {
+                            clip-path: url(#clippath);
+                        }
+                        .mxd-background {
+                            fill: var(--neutral-bright) !important;
+                        }
+                    </style>
+                    <clipPath id="clippath">
+                        <rect class="st1" width="40" height="40" rx="7.49" ry="7.49"/>
                     </clipPath>
-                    <path class="mxd-cat" d="M29.2,30.8h2.5v2.5v2.5
-              h-2.5v-2.5V30.8z M18.4,33.3v2.5h2.5v-2.5v-2.5h-2.5V33.3z M35,18.3v2.5h-2.5v-2.5H35z M30,23.3h2.5v-2.5H30V23.3z M25,23.3h-2.5
-              H20v2.5h2.5H25h2.5H30v-2.5h-2.5H25z M17.5,20.8v2.5H20v-2.5H17.5z M15,18.3v2.5h2.5v-2.5H15z M12.5,23.3v2.5v2.5H15v-2.5v-2.5
-              v-2.5h-2.5V23.3z M10,30.8v2.5H8.4H5.9v2.5h2.5v2.5H5.9v2.5h2.5v2.5v2.5v2.5v2.5h2.5v-2.5v-2.5v-2.5h2.5h2.5v-2.5h-2.5h-2.5v-2.5
-              v-2.5v-2.5h1.7v-2.5v-2.5H10V30.8z M37.5,23.3v-2.5H35v2.5v2.5v2.5h2.5v-2.5V23.3z M44.2,35.8v-2.5h-2.5H40v-2.5v-2.5h-2.5v2.5v2.5
-              h1.7v2.5v2.5v2.5h-2.5h-2.5v2.5h2.5h2.5v2.5v2.5v2.5h2.5v-2.5v-2.5v-2.5v-2.5h2.5v-2.5h-2.5v-2.5H44.2z"/>
+                </defs>
+                <g class="st2">
+                    <g>
+                        <path class="mxd-background" d="M30.86,10c-1.07,0-3.44,2.63-5.27,6.05-1.62-.35-3.47-.55-5.59-.6-2.12.05-3.97.25-5.59.6-1.82-3.42-4.2-6.05-5.27-6.05-4.03,0-9.5,29.86-9.5,38h40.71c0-8.14-5.47-38-9.5-38h.01Z"/>
+                        <g>
+                            <g>
+                                <circle class="st0" cx="14" cy="25.25" r="3.5"/>
+                                <circle class="st3" cx="14" cy="25.25" r="2.5"/>
+                            </g>
+                            <g>
+                                <circle class="st0" cx="26" cy="25.25" r="3.5"/>
+                                <circle class="st3" cx="26" cy="25.25" r="2.5"/>
+                            </g>
+                        </g>
+                    </g>
                 </g>
-      </svg>
+            </svg>
             <!-- logo text -->
             <span class="logo-text">Nargiz Ibrahimova</span>
         </a>
@@ -312,8 +326,7 @@
                                     <div class="row g-0">
                                         <div class="col-12">
                                             <blockquote class="reveal-type animate-in-up">
-                                                Here we must run as fast as we can, just to stay in place. And if you wish to go anywhere you must run
-                                                twice as fast as that.
+                                                Check out my portfolio below to discover my creative work!
                                             </blockquote>
                                         </div>
                                     </div>
@@ -420,19 +433,14 @@
                                                     </div>
                                                 </div>
                                                 <!-- Project Block - Title with Image End -->
+
                                                 <!-- Project Block - The Challenge Start -->
                                                 <div class="project__block pre-grid-items">
                                                     <div class="project__descr">
                                                         <div class="container-fluid p-0">
                                                             <div class="row g-0">
-                                                                <div class="col-12 col-xl-4">
-                                                                    <p class="project__subtitle tagline-chapter">The challenge</p>
-                                                                </div>
-                                                                <div class="col-12 col-xl-8">
-                                                                    <p class="type-basic-160lh">Lorem ipsum dolor sit amet consectetur adipisicing
-                                                                        elit. Voluptates sequi
-                                                                        laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum,
-                                                                        quas nisi doloribus! Id aliquam error corrupti inventore sapiente.</p>
+                                                                <div class="col-12">
+                                                                    <p class="type-basic-160lh">Discover the creative projects I worked on for McDonald's Azerbaijan at DDB Azerbaijan. Here, you'll find key visuals, print posters, illustrations, shootings, packaging designs, and many other creative works I've crafted.</p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -606,31 +614,8 @@
                                                 </div>
                                                 <!-- Project Block - Illustrations Grid End -->
 
-                                                <!-- Project Block - My Solution Start -->
-                                                <div class="project__block">
-                                                    <div class="project__descr">
-                                                        <div class="container-fluid p-0">
-                                                            <div class="row g-0">
-                                                                <div class="col-12 col-xl-4">
-                                                                    <p class="project__subtitle tagline-chapter">My solution</p>
-                                                                </div>
-                                                                <div class="col-12 col-xl-8">
-                                                                    <p class="type-basic-160lh">Lorem ipsum dolor sit amet consectetur adipisicing
-                                                                        elit. Voluptates sequi
-                                                                        laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum,
-                                                                        quas nisi doloribus! Id aliquam error corrupti inventore sapiente. Voluptates
-                                                                        sequi
-                                                                        laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa
-                                                                        ipsum.</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- Project Block - My Solution End -->
-
                                                 <!-- Project Block - Illustration Fullwidth Start -->
-                                                <div class="project__block no-margin">
+                                                <div class="project__block">
                                                     <div class="project__illustration-xl">
                                                         <img src="assets/img/works/mcdonalds/maestro-new-year-2-RGB.webp" alt="Project Illustration">
                                                     </div>
@@ -1619,6 +1604,14 @@
                                         <!-- tools single item -->
                                         <div class="tools-cards__item d-flex grid-item animate-card-4">
                                             <div class="tools-cards__card">
+                                                <img class="tools-cards__icon animate-in-up" src="assets/img/icons/icon-after-effects.svg"
+                                                     alt="Tools Icon">
+                                                <h6 class="tools-cards__caption tagline-tool animate-in-up">After Effects</h6>
+                                            </div>
+                                        </div>
+                                        <!-- tools single item -->
+                                        <div class="tools-cards__item d-flex grid-item animate-card-4">
+                                            <div class="tools-cards__card">
                                                 <img class="tools-cards__icon animate-in-up" src="assets/img/icons/icon-indesign.svg"
                                                      alt="Tools Icon">
                                                 <h6 class="tools-cards__caption tagline-tool animate-in-up">InDesign</h6>
@@ -1699,7 +1692,12 @@
                                             <input type="hidden" name="project_name" value="Personal Portfolio">
                                             <input type="hidden" name="admin_email" value="hello@nargizibrahimova.info">
                                             <input type="hidden" name="form_subject" value="Contact Form Message">
-                                            <!-- END Hidden Required Fields -->
+                                            <!-- END Hidden Required Fields-->
+
+                                            <!-- Honeypot Field -->
+                                            <div style="display: none;">
+                                                <input type="text" name="honeypot" value="">
+                                            </div>
 
                                             <div class="container-fluid p-0">
                                                 <div class="row gx-0">
@@ -1719,12 +1717,7 @@
                                                         <textarea name="Message" placeholder="A few words about your project*" required></textarea>
                                                     </div>
                                                     <div class="col-12 form__item animate-in-up">
-                                                        <!-- Add the reCAPTCHA -->
-                                                        <button
-                                                                class="g-recaptcha btn btn-default hover-default"
-                                                                data-sitekey="6LcJC5UqAAAAAPXip_CG4USSLikI1GJHOR_2Arza"
-                                                                data-callback="onSubmit"
-                                                                data-action="submit">
+                                                        <button class="btn btn-default hover-default" type="submit">
                                                             <em></em>
                                                             <span class="btn-caption">Submit request</span>
                                                         </button>
@@ -1732,16 +1725,7 @@
                                                 </div>
                                             </div>
                                         </form>
-                                        <!-- Google reCAPTCHA API -->
-                                        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-                                        <script>
-                                            function onSubmit(token) {
-                                                document.getElementById("contact-form").submit();
-                                            }
-                                        </script>
-
                                         <!-- Contact Form End -->
-
                                     </div>
                                 </div>
                                 <!-- Content Block - Contact Form End -->
@@ -1815,36 +1799,49 @@
                                                             <div class="col-12 col-lg-3 contact-data__item grid-item">
                                                                 <a href="#home" class="footer-logo logo-text animate-in-up">
                                                                     <!-- logo icon -->
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50"
-                                                                         style="enable-background:new 0 0 50 50;" xml:space="preserve">
-                                    <style type="text/css">
-                                        .mxd-background {
-                                            fill: var(--neutral-bright);
-                                        }
+                                                                    <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 40">
+                                                                        <!-- Generator: Adobe Illustrator 29.0.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 192)  -->
+                                                                        <defs>
+                                                                            <style>
+                                                                                .st0 {
+                                                                                    fill: var(--neutral-bright-opposite) !important;
+                                                                                }
 
-                                        .mxd-cat {
-                                            clip-path: url(#mxd-path-id-2);
-                                            fill: var(--t-opp-bright);
-                                        }
-                                    </style>
-                                                                        <path class="mxd-background" d="M33.4,50H16.7C7.5,50,0,42.5,0,33.3V16.7C0,7.5,7.5,0,16.7,0h16.7C42.5,0,50,7.5,50,16.7v16.7
-                                          C50,42.5,42.5,50,33.4,50z"/>
-                                                                        <g>
-                                                                            <defs>
-                                                                                <path id="mxd-clip-path-2" d="M33.4,50H16.7C7.5,50,0,42.5,0,33.3V16.7C0,7.5,7.5,0,16.7,0h16.7C42.5,0,50,7.5,50,16.7v16.7
-                                              C50,42.5,42.5,50,33.4,50z"/>
-                                                                            </defs>
-                                                                            <clipPath id="mxd-path-id-2">
-                                                                                <use xlink:href="#mxd-clip-path-2" style="overflow:visible;"/>
+                                                                                .st3 {
+                                                                                    fill: var(--neutral-bright) !important;
+                                                                                }
+
+                                                                                .st1 {
+                                                                                    fill: none;
+                                                                                }
+
+                                                                                .st2 {
+                                                                                    clip-path: url(#clippath);
+                                                                                }
+                                                                                .mxd-background {
+                                                                                    fill: var(--neutral-bright) !important;
+                                                                                }
+                                                                            </style>
+                                                                            <clipPath id="clippath">
+                                                                                <rect class="st1" width="40" height="40" rx="7.49" ry="7.49"/>
                                                                             </clipPath>
-                                                                            <path class="mxd-cat" d="M29.2,30.8h2.5v2.5v2.5
-                                            h-2.5v-2.5V30.8z M18.4,33.3v2.5h2.5v-2.5v-2.5h-2.5V33.3z M35,18.3v2.5h-2.5v-2.5H35z M30,23.3h2.5v-2.5H30V23.3z M25,23.3h-2.5
-                                            H20v2.5h2.5H25h2.5H30v-2.5h-2.5H25z M17.5,20.8v2.5H20v-2.5H17.5z M15,18.3v2.5h2.5v-2.5H15z M12.5,23.3v2.5v2.5H15v-2.5v-2.5
-                                            v-2.5h-2.5V23.3z M10,30.8v2.5H8.4H5.9v2.5h2.5v2.5H5.9v2.5h2.5v2.5v2.5v2.5v2.5h2.5v-2.5v-2.5v-2.5h2.5h2.5v-2.5h-2.5h-2.5v-2.5
-                                            v-2.5v-2.5h1.7v-2.5v-2.5H10V30.8z M37.5,23.3v-2.5H35v2.5v2.5v2.5h2.5v-2.5V23.3z M44.2,35.8v-2.5h-2.5H40v-2.5v-2.5h-2.5v2.5v2.5
-                                            h1.7v2.5v2.5v2.5h-2.5h-2.5v2.5h2.5h2.5v2.5v2.5v2.5h2.5v-2.5v-2.5v-2.5v-2.5h2.5v-2.5h-2.5v-2.5H44.2z"/>
+                                                                        </defs>
+                                                                        <g class="st2">
+                                                                            <g>
+                                                                                <path class="mxd-background" d="M30.86,10c-1.07,0-3.44,2.63-5.27,6.05-1.62-.35-3.47-.55-5.59-.6-2.12.05-3.97.25-5.59.6-1.82-3.42-4.2-6.05-5.27-6.05-4.03,0-9.5,29.86-9.5,38h40.71c0-8.14-5.47-38-9.5-38h.01Z"/>
+                                                                                <g>
+                                                                                    <g>
+                                                                                        <circle class="st0" cx="14" cy="25.25" r="3.5"/>
+                                                                                        <circle class="st3" cx="14" cy="25.25" r="2.5"/>
+                                                                                    </g>
+                                                                                    <g>
+                                                                                        <circle class="st0" cx="26" cy="25.25" r="3.5"/>
+                                                                                        <circle class="st3" cx="26" cy="25.25" r="2.5"/>
+                                                                                    </g>
+                                                                                </g>
+                                                                            </g>
                                                                         </g>
-                                  </svg>
+                                                                    </svg>
                                                                     <!-- logo text -->
                                                                     <span>Nargiz Ibrahimova</span>
                                                                 </a>

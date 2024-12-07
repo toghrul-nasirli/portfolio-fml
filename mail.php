@@ -8,19 +8,12 @@ use PHPMailer\PHPMailer\Exception;
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
-// reCAPTCHA Secret Key
-$recaptchaSecret = $_ENV['RECAPTCHA_SECRET_KEY'];
-
-// Validate reCAPTCHA
-$recaptchaResponse = $_POST['g-recaptcha-response'];
-$verifyResponse = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$recaptchaSecret&response=$recaptchaResponse");
-$responseData = json_decode($verifyResponse);
-
-if (!$responseData->success || $responseData->score < 0.5) {
-    die('Failed reCAPTCHA verification. Please try again.');
+// Honeypot validation
+if (!empty($_POST['honeypot'])) {
+    die('Spam detected. Submission rejected.');
 }
 
-// Process the form
+// Sanitize inputs
 $name = htmlspecialchars($_POST['Name']);
 $company = htmlspecialchars($_POST['Company']);
 $email = htmlspecialchars($_POST['E-mail']);

@@ -55,6 +55,7 @@ const fadeInItems = document.querySelectorAll('.loading__fade');
 function startLoader() {
   let counterElement = document.querySelector(".loader__count .count__text");
   let currentValue = 0;
+
   function updateCounter() {
     if (currentValue < 100) {
       let increment = Math.floor(Math.random() * 10) + 1;
@@ -63,14 +64,30 @@ function startLoader() {
       let delay = Math.floor(Math.random() * 120) + 25;
       setTimeout(updateCounter, delay);
     }
+
+    // Trigger hideLoader when counter reaches 100%
+    if (currentValue === 100) {
+      hideLoader(); // Call this function directly when 100% is reached
+    }
   }
+
   updateCounter();
 }
+
 startLoader();
 
+// Function to handle the loader disappearance
+function hideLoader() {
+  gsap.to(".loader__count", { duration: 0.8, ease: 'power2.in', y: "100%", delay: 1.8 });
+  gsap.to(".loader__wrapper", { duration: 0.8, ease: 'power4.in', y: "-100%", delay: 2.2 });
+  setTimeout(() => {
+    document.getElementById("loader").classList.add("loaded");
+  }, 3200);
+}
+
+// Optionally, you can still keep imgLoad logic for handling content-related events
 imgLoad.on('done', instance => {
-  hideLoader();
-  pageAppearance();
+  pageAppearance(); // This is now independent of the loader
 });
 
 function hideLoader() {
