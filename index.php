@@ -165,17 +165,6 @@
             <!-- Main Section Intro Start -->
             <div class="main__intro intro-95-desktop">
 
-                <!-- Intro Background Start -->
-                <div class="intro__background intro-bg-02">
-                    <!-- <div class="intro-bg-02__01" data-speed="0.6">
-                        <img src="#" alt="Blayden Decorative Image">
-                      </div> -->
-                    <div class="intro-bg-02__02" data-speed="0.8">
-                        <img src="assets/img/demo/temp.webp" alt="Blayden Decorative Image">
-                    </div>
-                </div>
-                <!-- Intro Background End -->
-
                 <div class="container-fluid p-0 fullheight-desktop">
                     <div class="row g-0 fullheight-desktop align-items-xl-stretch">
 
@@ -1335,11 +1324,12 @@
                                                 </div>
                                                 <div class="about-info__item animate-in-up">
                                                     <h6>
-                                                        <a class="link-inline text-link" href="tel:+994557505889">+994 55 750 58 89</a>
+                                                        <a class="link-inline text-link" href="tel:+994107170619">+994 10 717 06 19</a>
                                                     </h6>
                                                 </div>
                                                 <div class="about-info__item animate-in-up">
                                                     <h6>
+                                                        <a class="link-inline text-link" href="mailto:hello@nargizibrahimova.info">hello@nargizibrahimova.info</a>
                                                         <a class="link-inline text-link" href="mailto:nargiizibra@gmail.com">nargiizibra@gmail.com</a>
                                                     </h6>
                                                 </div>
@@ -1479,8 +1469,29 @@
                                         <!-- resume single item -->
                                         <div class="row g-0 resume-lines__item">
                                             <div class="col-12 col-md-4 col-lg-2">
-                                                <p class="resume-lines__date type-basic-160lh animate-in-up fs-1">2023 April</p>
+                                                <p class="resume-lines__date type-basic-160lh animate-in-up fs-1">2023 October</p>
                                                 <p class="resume-lines__date type-basic-160lh animate-in-up fs-2">Present</p>
+                                            </div>
+                                            <div class="col-12 col-md-4 col-lg-5">
+                                                <h4 class="resume-lines__title animate-in-up">Graphic Designer</h4>
+                                                <p class="resume-lines__source small animate-in-up">
+                                                    in the
+                                                    <a class="link-small-underline" href="https://mediabalans.com" target="_blank">Media Balans</a>
+                                                </p>
+                                            </div>
+                                            <div class="col-12 col-md-4 col-lg-5">
+                                                <h5>Job responsibilities</h5>
+                                                <p class="fs-2 mb-4 resume-lines__descr type-basic-160lh animate-in-up">
+                                                    Brand shootings, social media posts, creative content, illustrations, branding, print files
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="resume-divider animate-in-up"></div>
+                                        <!-- resume single item -->
+                                        <div class="row g-0 resume-lines__item">
+                                            <div class="col-12 col-md-4 col-lg-2">
+                                                <p class="resume-lines__date type-basic-160lh animate-in-up fs-1">2023 April</p>
+                                                <p class="resume-lines__date type-basic-160lh animate-in-up fs-2">2024 October</p>
                                             </div>
                                             <div class="col-12 col-md-4 col-lg-5">
                                                 <h4 class="resume-lines__title animate-in-up">Graphic Designer</h4>
@@ -1622,7 +1633,6 @@
                                         </div>
                                     </div>
                                     <!-- Tools Cards End -->
-
                                 </div>
                                 <!-- Content Block - Tools Cards End -->
                             </div>
@@ -1642,11 +1652,9 @@
             <div class="inner__wrapper">
                 <div class="container-fluid p-0">
                     <div class="row g-0">
-
                         <!-- Inner Section Name Start -->
                         <div class="col-12 col-xl-2">
                             <div class="inner__name">
-
                                 <!-- Content Block - Section Name Start -->
                                 <div class="content__block name-block">
                                     <span class="section-name icon-right animate-in-up">
@@ -1655,7 +1663,6 @@
                                     </span>
                                 </div>
                                 <!-- Content Block - Section Name Start -->
-
                             </div>
                         </div>
                         <!-- Inner Section Name End -->
@@ -1689,10 +1696,11 @@
                                         <!-- Contact Form Start -->
                                         <form class="form contact-form" id="contact-form" method="post" action="./mail.php">
                                             <!-- Hidden Required Fields -->
-                                            <input type="hidden" name="project_name" value="Personal Portfilio">
+                                            <input type="hidden" name="project_name" value="Personal Portfolio">
                                             <input type="hidden" name="admin_email" value="hello@nargizibrahimova.info">
                                             <input type="hidden" name="form_subject" value="Contact Form Message">
-                                            <!-- END Hidden Required Fields-->
+                                            <!-- END Hidden Required Fields -->
+
                                             <div class="container-fluid p-0">
                                                 <div class="row gx-0">
                                                     <div class="col-12 col-md-6 form__item animate-in-up">
@@ -1711,7 +1719,12 @@
                                                         <textarea name="Message" placeholder="A few words about your project*" required></textarea>
                                                     </div>
                                                     <div class="col-12 form__item animate-in-up">
-                                                        <button class="btn btn-default hover-default" type="submit">
+                                                        <!-- Add the reCAPTCHA -->
+                                                        <button
+                                                                class="g-recaptcha btn btn-default hover-default"
+                                                                data-sitekey="6LcJC5UqAAAAAPXip_CG4USSLikI1GJHOR_2Arza"
+                                                                data-callback="onSubmit"
+                                                                data-action="submit">
                                                             <em></em>
                                                             <span class="btn-caption">Submit request</span>
                                                         </button>
@@ -1719,6 +1732,14 @@
                                                 </div>
                                             </div>
                                         </form>
+                                        <!-- Google reCAPTCHA API -->
+                                        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                                        <script>
+                                            function onSubmit(token) {
+                                                document.getElementById("contact-form").submit();
+                                            }
+                                        </script>
+
                                         <!-- Contact Form End -->
 
                                     </div>
@@ -1837,14 +1858,14 @@
                                                             <div class="col-12 col-md-4 col-lg-3 contact-data__item grid-item">
                                                                 <p class="contact-data__title tagline-chapter animate-in-up">Phone</p>
                                                                 <p class="contact-data__text small type-basic-160lh">
-                                                                    <a class="link-small-160lh animate-in-up" href="tel:+994557505889">+994 55 750 58
+                                                                    <a class="link-small-160lh animate-in-up" href="tel:+994107170619">+994 55 750 58
                                                                         89</a>
                                                                 </p>
                                                             </div>
                                                             <div class="col-12 col-md-4 col-lg-3 contact-data__item grid-item">
                                                                 <p class="contact-data__title tagline-chapter animate-in-up">Email</p>
                                                                 <p class="contact-data__text small type-basic-160lh">
-                                                                    <a class="link-small-160lh animate-in-up" href="mailto:nargiizibra@gmail.com">nargiizibra@gmail.com</a>
+                                                                    <a class="link-small-160lh animate-in-up" href="mailto:hello@nargizibrahimova.info">hello@nargizibrahimova.info</a>
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -1874,17 +1895,6 @@
 
     </main>
     <!-- Page Content End -->
-
-    <!-- Bottom Background Images Start -->
-    <div class="bottom__background bottom-bg-02">
-        <div class="bottom-bg-02__02 animate-card-2">
-            <img src="assets/img/backgrounds/1200x1553_bg04.webp" alt="Template background image">
-        </div>
-        <div class="bottom-bg-02__01 animate-card-2">
-            <img src="assets/img/backgrounds/1200x1200_bg05.webp" alt="Template background image">
-        </div>
-    </div>
-    <!-- Bottom Background Images End -->
 
     <!-- Mobile Menu Bottom Placeholder Start -->
     <div class="header-offset"></div>
