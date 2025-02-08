@@ -115,7 +115,7 @@
     <div class="logo loading__fade">
         <a href="#home" class="logo__link">
             <!-- logo icon -->
-            <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 40">
+            <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 40 40">
                 <!-- Generator: Adobe Illustrator 29.0.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 192)  -->
                 <defs>
                     <style>
@@ -134,6 +134,7 @@
                         .st2 {
                             clip-path: url(#clippath);
                         }
+
                         .mxd-background {
                             fill: var(--neutral-bright) !important;
                         }
@@ -144,7 +145,8 @@
                 </defs>
                 <g class="st2">
                     <g>
-                        <path class="mxd-background" d="M30.86,10c-1.07,0-3.44,2.63-5.27,6.05-1.62-.35-3.47-.55-5.59-.6-2.12.05-3.97.25-5.59.6-1.82-3.42-4.2-6.05-5.27-6.05-4.03,0-9.5,29.86-9.5,38h40.71c0-8.14-5.47-38-9.5-38h.01Z"/>
+                        <path class="mxd-background"
+                              d="M30.86,10c-1.07,0-3.44,2.63-5.27,6.05-1.62-.35-3.47-.55-5.59-.6-2.12.05-3.97.25-5.59.6-1.82-3.42-4.2-6.05-5.27-6.05-4.03,0-9.5,29.86-9.5,38h40.71c0-8.14-5.47-38-9.5-38h.01Z"/>
                         <g>
                             <g>
                                 <circle class="st0" cx="14" cy="25.25" r="3.5"/>
@@ -440,7 +442,10 @@
                                                         <div class="container-fluid p-0">
                                                             <div class="row g-0">
                                                                 <div class="col-12">
-                                                                    <p class="type-basic-160lh">Discover the creative projects I worked on for McDonald's Azerbaijan at DDB Azerbaijan. Here, you'll find key visuals, print posters, illustrations, shootings, packaging designs, and many other creative works I've crafted.</p>
+                                                                    <p class="type-basic-160lh">Discover the creative projects I worked on for
+                                                                        McDonald's Azerbaijan at DDB Azerbaijan. Here, you'll find key visuals, print
+                                                                        posters, illustrations, shootings, packaging designs, and many other creative
+                                                                        works I've crafted.</p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1488,7 +1493,8 @@
                                             <div class="col-12 col-md-4 col-lg-5">
                                                 <h5>Job responsibilities</h5>
                                                 <p class="fs-2 mb-4 resume-lines__descr type-basic-160lh animate-in-up">
-                                                    Brand shootings, social media posts, creative content, illustrations, logo and branding, print files
+                                                    Brand shootings, social media posts, creative content, illustrations, logo and branding, print
+                                                    files
                                                 </p>
                                                 <h5>Brands</h5>
                                                 <p class="fs-2 resume-lines__descr type-basic-160lh animate-in-up">
@@ -1675,7 +1681,7 @@
                                 <!-- Content Block - H2 Section Title End -->
 
                                 <!-- Content Block - Contact Form Start -->
-                                <div class="content__block grid-block pre-grid-items">
+                                <div class="content__block grid-block pre-grid-items contact">
                                     <div class="form-container">
 
                                         <!-- Reply Messages Start -->
@@ -1687,12 +1693,14 @@
                                         <!-- Reply Messages End -->
 
                                         <!-- Contact Form Start -->
+                                        <!-- Add Google reCAPTCHA -->
+                                        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
                                         <form class="form contact-form" id="contact-form" method="post" action="./mail.php">
                                             <!-- Hidden Required Fields -->
                                             <input type="hidden" name="project_name" value="Personal Portfolio">
                                             <input type="hidden" name="admin_email" value="hello@nargizibrahimova.info">
                                             <input type="hidden" name="form_subject" value="Contact Form Message">
-                                            <!-- END Hidden Required Fields-->
 
                                             <!-- Honeypot Field -->
                                             <div style="display: none;">
@@ -1716,15 +1724,32 @@
                                                     <div class="col-12 form__item animate-in-up">
                                                         <textarea name="Message" placeholder="A few words about your project*" required></textarea>
                                                     </div>
+
                                                     <div class="col-12 form__item animate-in-up">
-                                                        <button class="btn btn-default hover-default" type="submit">
-                                                            <em></em>
-                                                            <span class="btn-caption">Submit request</span>
-                                                        </button>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="col-6" style="width: 35%;">
+                                                                <button class="btn btn-default hover-default g-recaptcha"
+                                                                        data-sitekey="6Lfu7NAqAAAAAPOxnxpZdaTA6nG-nvor1-TTi2wv"
+                                                                        data-callback='onSubmit'
+                                                                        data-action='submit'
+                                                                        type="submit">
+                                                                    <em></em>
+                                                                    <span class="btn-caption">Submit request</span>
+                                                                </button>
+                                                            </div>
+
+                                                            <div class="col-6 d-flex align-items-center">
+                                                                <span class="loading-spinner" style="display: none;">
+                                                                    <img src="./assets/img/icons/loader.svg" alt="Loading..." width="20" style="height: 45px !important;">
+                                                                </span>
+                                                            </div>
+                                                        </div>
                                                     </div>
+
                                                 </div>
                                             </div>
                                         </form>
+
                                         <!-- Contact Form End -->
                                     </div>
                                 </div>
@@ -1799,7 +1824,8 @@
                                                             <div class="col-12 col-lg-3 contact-data__item grid-item">
                                                                 <a href="#home" class="footer-logo logo-text animate-in-up">
                                                                     <!-- logo icon -->
-                                                                    <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 40">
+                                                                    <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                                         viewBox="0 0 40 40">
                                                                         <!-- Generator: Adobe Illustrator 29.0.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 192)  -->
                                                                         <defs>
                                                                             <style>
@@ -1818,6 +1844,7 @@
                                                                                 .st2 {
                                                                                     clip-path: url(#clippath);
                                                                                 }
+
                                                                                 .mxd-background {
                                                                                     fill: var(--neutral-bright) !important;
                                                                                 }
@@ -1828,7 +1855,8 @@
                                                                         </defs>
                                                                         <g class="st2">
                                                                             <g>
-                                                                                <path class="mxd-background" d="M30.86,10c-1.07,0-3.44,2.63-5.27,6.05-1.62-.35-3.47-.55-5.59-.6-2.12.05-3.97.25-5.59.6-1.82-3.42-4.2-6.05-5.27-6.05-4.03,0-9.5,29.86-9.5,38h40.71c0-8.14-5.47-38-9.5-38h.01Z"/>
+                                                                                <path class="mxd-background"
+                                                                                      d="M30.86,10c-1.07,0-3.44,2.63-5.27,6.05-1.62-.35-3.47-.55-5.59-.6-2.12.05-3.97.25-5.59.6-1.82-3.42-4.2-6.05-5.27-6.05-4.03,0-9.5,29.86-9.5,38h40.71c0-8.14-5.47-38-9.5-38h.01Z"/>
                                                                                 <g>
                                                                                     <g>
                                                                                         <circle class="st0" cx="14" cy="25.25" r="3.5"/>
@@ -1862,7 +1890,8 @@
                                                             <div class="col-12 col-md-4 col-lg-3 contact-data__item grid-item">
                                                                 <p class="contact-data__title tagline-chapter animate-in-up">Email</p>
                                                                 <p class="contact-data__text small type-basic-160lh">
-                                                                    <a class="link-small-160lh animate-in-up" href="mailto:hello@nargizibrahimova.info">hello@nargizibrahimova.info</a>
+                                                                    <a class="link-small-160lh animate-in-up"
+                                                                       href="mailto:hello@nargizibrahimova.info">hello@nargizibrahimova.info</a>
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -1981,6 +2010,47 @@
             setTimeout(function () {
                 secondButton.click();
             }, 600);
+        }
+
+        function onSubmit(token) {
+            // Prevent the default form submission
+            event.preventDefault();
+
+            $(".loading-spinner").removeAttr('style');
+
+            // Serialize form data
+            var formData = $('#contact-form').serialize();
+
+            // Submit the form data via AJAX
+            $.ajax({
+                type   : 'POST',
+                url    : $('#contact-form').attr('action'),
+                data   : formData,
+                success: function (response) {
+                    // Assuming 'response' contains the server's response
+                    if (response === 'Message has been sent') {
+                        $('.contact').find('.form').addClass('is-hidden');
+                        $('.contact').find('.form__reply').addClass('is-visible');
+
+                        // $('#contact-form')[0].reset();
+
+                        setTimeout(function () {
+                            // Done Functions
+                            $('.contact').find('.form__reply').removeClass('is-visible');
+                            $('.contact').find('.form').delay(300).removeClass('is-hidden');
+                            $('#contact-form').trigger("reset");
+                            $(".loading-spinner").css('display', 'none');
+                        }, 5000);
+                    } else {
+                        // Handle errors (e.g., show an error message)
+                        alert('There was an error sending your message. Please try again.');
+                    }
+                },
+                error  : function () {
+                    // Handle AJAX errors
+                    alert('There was an error sending your message. Please try again.');
+                }
+            });
         }
     </script>
     <!-- Load Scripts End -->

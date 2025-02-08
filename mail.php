@@ -8,12 +8,44 @@ use PHPMailer\PHPMailer\Exception;
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
-// Honeypot validation
+// Honeypot validation (hidden field check)
 if (!empty($_POST['honeypot'])) {
     die('Spam detected. Submission rejected.');
 }
 
-// Sanitize inputs
+// reCAPTCHA Validation
+$recaptchaSecret = $_ENV['RECAPTCHA_SECRET_KEY'];
+$recaptchaResponse = $_POST['g-recaptcha-response'] ?? '';
+
+if (!$recaptchaResponse) {
+    die('reCAPTCHA verification failed. Please try again.');
+}
+
+// Verify reCAPTCHA with Google
+$verifyURL = "https://www.google.com/recaptcha/api/siteverify";
+$data = [
+    'secret' => $recaptchaSecret,
+    'response' => $recaptchaResponse,
+    'remoteip' => $_SERVER['REMOTE_ADDR']
+];
+
+$options = [
+    'http' => [
+        'header'  => "Content-type: application/x-www-form-urlencoded",
+        'method'  => 'POST',
+        'content' => http_build_query($data)
+    ]
+];
+
+$context  = stream_context_create($options);
+$response = file_get_contents($verifyURL, false, $context);
+$result = json_decode($response, true);
+
+if (!$result['success']) {
+    die('reCAPTCHA verification failed. Please try again.');
+}
+
+// Sanitize Inputs
 $name = htmlspecialchars($_POST['Name']);
 $company = htmlspecialchars($_POST['Company']);
 $email = htmlspecialchars($_POST['E-mail']);
