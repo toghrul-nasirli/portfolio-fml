@@ -231,7 +231,7 @@
                                 <div class="items__container">
                                     <!-- single item -->
                                     <div class="item icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.3 93.1" fill="currentColor">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.3 93.1">
                                             <g>
                                                 <rect x="45.7" class="st0" width="1" height="93.1"></rect>
                                                 <rect x="45.7" y="0" transform="matrix(0.8412 -0.5407 0.5407 0.8412 -17.8476 32.3497)" class="st0"
@@ -266,11 +266,11 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89.2 82.8" fill="currentColor">
                                             <g>
                                                 <g>
-                                                    <rect class="st0" width="89.2" height="1"></rect>
-                                                    <rect y="20.5" class="st0" width="89.2" height="1"></rect>
-                                                    <rect y="40.9" class="st0" width="89.2" height="1"></rect>
-                                                    <rect y="61.4" class="st0" width="89.2" height="1"></rect>
-                                                    <rect y="81.8" class="st0" width="89.2" height="1"></rect>
+                                                    <rect class="st3" width="89.2" height="1"></rect>
+                                                    <rect y="20.5" class="st3" width="89.2" height="1"></rect>
+                                                    <rect y="40.9" class="st3" width="89.2" height="1"></rect>
+                                                    <rect y="61.4" class="st3" width="89.2" height="1"></rect>
+                                                    <rect y="81.8" class="st3" width="89.2" height="1"></rect>
                                                 </g>
                                                 <rect x="2.5" y="10.2" transform="matrix(0.9712 -0.2384 0.2384 0.9712 -1.2518 11.1229)" class="st0"
                                                       width="85.7" height="1"></rect>
@@ -1769,7 +1769,7 @@
                                         <!-- socials cards single item -->
                                         <li class="socials-cards__item grid-item d-flex animate-card-5">
                                             <a class="socials-cards__link d-flex align-items-center justify-content-center"
-                                               href="https://www.linkedin.com/in/nargizradjabqizi-3a4402223/" target="_blank">
+                                               href="https://www.linkedin.com/in/nargizibrahimova-3a4402223/" target="_blank">
                                                 <em></em>
                                                 <i class="ph ph-linkedin-logo"></i>
                                             </a>
@@ -1883,8 +1883,7 @@
                                                             <div class="col-12 col-md-4 col-lg-3 contact-data__item grid-item">
                                                                 <p class="contact-data__title tagline-chapter animate-in-up">Phone</p>
                                                                 <p class="contact-data__text small type-basic-160lh">
-                                                                    <a class="link-small-160lh animate-in-up" href="tel:+994107170619">+994 55 750 58
-                                                                        89</a>
+                                                                    <a class="link-small-160lh animate-in-up" href="tel:+994107170619">+994 10 717 06 19</a>
                                                                 </p>
                                                             </div>
                                                             <div class="col-12 col-md-4 col-lg-3 contact-data__item grid-item">
