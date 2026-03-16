@@ -447,7 +447,7 @@ $(function() {
     $.magnificPopup.open({
       items: { src: $(this).data("mfp-src") },
       type: "inline",
-      fixedContentPos: false,
+      fixedContentPos: true,
       fixedBgPos: true,
       overflowY: "scroll",
       preloader: false,

@@ -4799,6 +4799,7 @@ form textarea:required:valid {
 .mfp-fade .mfp-container {
   position: fixed;
   overflow-y: scroll;
+  overscroll-behavior: contain;
 }
 
 .mfp-bg {
