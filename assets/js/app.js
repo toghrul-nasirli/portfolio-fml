@@ -579,12 +579,14 @@ $(function() {
   // --------------------------------------------- //
   // Contact Form Start
   // --------------------------------------------- //
-  $("#contact-form").submit(function() { //Change
+  $("#contact-form").submit(function(e) {
+    e.preventDefault();
     var th = $(this);
     $.ajax({
       type: "POST",
-      url: "mail.php", //Change
-      data: th.serialize()
+      url: th.attr("action"),
+      data: th.serialize(),
+      headers: { "Accept": "application/json" }
     }).done(function() {
       $('.contact').find('.form').addClass('is-hidden');
       $('.contact').find('.form__reply').addClass('is-visible');
