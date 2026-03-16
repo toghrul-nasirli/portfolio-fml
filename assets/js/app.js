@@ -46,8 +46,6 @@ gsap.registerPlugin(ScrollTrigger);
 // --------------------------------------------- //
 // Loader & Loading Animation Start
 // --------------------------------------------- //
-const content = document.querySelector('body');
-const imgLoad = imagesLoaded(content);
 const loadingWrap = document.querySelector('.loading-wrap');
 const loadingItems = loadingWrap.querySelectorAll('.loading__item');
 const fadeInItems = document.querySelectorAll('.loading__fade');
@@ -68,10 +66,11 @@ function startLoader() {
 }
 startLoader();
 
-imgLoad.on('done', instance => {
-  hideLoader();
-  pageAppearance();
-});
+// Do not use imagesLoaded(body) — it hangs indefinitely with loading="lazy" images
+// that haven't been fetched yet. The counter animation takes ~1s; hideLoader()
+// has a built-in 1.8s delay before it starts, so calling them together is safe.
+hideLoader();
+pageAppearance();
 
 function hideLoader() {
   gsap.to(".loader__count", { duration: 0.8, ease: 'power2.in', y: "100%", delay: 1.8 });
@@ -369,16 +368,18 @@ initMarquee();
 // ------------------------------------------------------------------------------ //
 // Parallax (apply parallax effect to any element with a data-speed attribute) Start
 // ------------------------------------------------------------------------------ //
-gsap.to("[data-speed]", {
-  y: (i, el) => (1 - parseFloat(el.getAttribute("data-speed"))) * ScrollTrigger.maxScroll(window) ,
-  ease: "none",
-  scrollTrigger: {
-    start: 0,
-    end: "max",
-    invalidateOnRefresh: true,
-    scrub: 0
-  }
-});
+if (document.querySelector("[data-speed]")) {
+  gsap.to("[data-speed]", {
+    y: (i, el) => (1 - parseFloat(el.getAttribute("data-speed"))) * ScrollTrigger.maxScroll(window),
+    ease: "none",
+    scrollTrigger: {
+      start: 0,
+      end: "max",
+      invalidateOnRefresh: true,
+      scrub: 0
+    }
+  });
+}
 // --------------------------------------------- //
 // Parallax End
 // --------------------------------------------- //
