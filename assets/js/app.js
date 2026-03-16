@@ -441,15 +441,19 @@ $(function() {
   // --------------------------------------------- //
   // Magnific Popup Start
   // --------------------------------------------- //
-  $(".popup-trigger").magnificPopup({
-    type: "inline",
-    fixedContentPos: true,
-    fixedBgPos: true,
-    overflowY: "scroll",
-    preloader: false,
-    midClick: true,
-    removalDelay: 600,
-    mainClass: "mfp-fade",
+  // Use event delegation so GSAP pin transforms don't break clicks in Chrome
+  $(document).on("click", ".popup-trigger", function(e) {
+    e.preventDefault();
+    $.magnificPopup.open({
+      items: { src: $(this).data("mfp-src") },
+      type: "inline",
+      fixedContentPos: false,
+      fixedBgPos: true,
+      overflowY: "scroll",
+      preloader: false,
+      removalDelay: 600,
+      mainClass: "mfp-fade",
+    });
   });
   // --------------------------------------------- //
   // Magnific Popup End
